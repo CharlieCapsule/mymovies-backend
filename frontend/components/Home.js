@@ -40,7 +40,7 @@ useEffect(() => {
 fetch('https://mymovies-backend-psi.vercel.app/movies')
 .then(response => response.json())
 .then(data => {
-  setMoviesData(data.movies.results)
+  setMoviesData(data.movies)
 })
 }, []);
 
